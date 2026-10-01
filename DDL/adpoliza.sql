@@ -1,0 +1,97 @@
+USE [Sis2000]
+GO
+
+/****** Objeto: Table [dbo].[adpoliza] Fecha de script: 1/10/2026 1:24:36 a. m. ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[adpoliza](
+	[cpoliza] [numeric](19, 0) NOT NULL,
+	[fanopol] [smallint] NOT NULL,
+	[fmespol] [tinyint] NOT NULL,
+	[u_version] [char](1) NULL,
+	[cramo] [smallint] NULL,
+	[cnpoliza] [char](30) NULL,
+	[cnpoliza_rel] [char](30) NULL,
+	[cproces] [numeric](14, 0) NULL,
+	[cplan] [char](6) NULL,
+	[itipoprod] [char](2) NULL,
+	[itipopol] [char](1) NULL,
+	[itiponegocio] [char](2) NULL,
+	[clider] [smallint] NULL,
+	[cpolizalider] [char](30) NULL,
+	[istatpol] [char](1) NULL,
+	[iestado] [char](1) NULL,
+	[itipoingreso] [char](1) NULL,
+	[cpoliza_mae] [numeric](20, 0) NULL,
+	[ccerti_mae] [numeric](20, 0) NULL,
+	[itiporen] [char](1) NULL,
+	[iperren] [smallint] NULL,
+	[ccauren] [smallint] NULL,
+	[iestadoren] [char](1) NULL,
+	[csucur] [smallint] NULL,
+	[csucurrec] [smallint] NULL,
+	[ccanalalt] [char](10) NULL,
+	[cscanalalt] [char](10) NULL,
+	[ctipocanal] [char](1) NULL,
+	[cgestor] [varchar](50) NULL,
+	[criesgo] [smallint] NULL,
+	[casegurado] [numeric](12, 0) NULL,
+	[cpolnum] [char](30) NULL,
+	[ctenedor] [numeric](12, 0) NULL,
+	[cultcert] [numeric](11, 0) NULL,
+	[cbeneficiario] [numeric](12, 0) NULL,
+	[cacreedor] [numeric](12, 0) NULL,
+	[cfinanciera] [numeric](12, 0) NULL,
+	[cproductor] [numeric](11, 0) NULL,
+	[czonaprod] [smallint] NULL,
+	[cejecta] [numeric](12, 0) NULL,
+	[cmoneda] [char](4) NULL,
+	[ptasamon] [numeric](13, 6) NULL,
+	[forigen] [datetime] NULL,
+	[fdesde] [datetime] NULL,
+	[fhasta] [datetime] NULL,
+	[fanulacion] [datetime] NULL,
+	[itipoanul] [char](1) NULL,
+	[canula] [smallint] NULL,
+	[fdevolucion] [datetime] NULL,
+	[idevolucion] [char](1) NULL,
+	[iformadevo] [char](1) NULL,
+	[xobserva] [varchar](255) NULL,
+	[qcuotas] [smallint] NULL,
+	[ifrecuencia] [char](1) NULL,
+	[itipovenprima] [char](1) NULL,
+	[iestadovenprima] [char](1) NULL,
+	[icalculoedad] [char](1) NULL,
+	[igemi] [char](1) NULL,
+	[iqgemi] [char](1) NULL,
+	[iapligemi] [char](1) NULL,
+	[mgemi] [numeric](17, 2) NULL,
+	[mgemiext] [numeric](17, 2) NULL,
+	[idomicialiado] [char](1) NULL,
+	[itipo_diligencia] [char](1) NULL,
+	[corigen_rel] [char](10) NULL,
+	[cprog] [char](20) NULL,
+	[ifuente] [char](10) NULL,
+	[bok] [char](1) NULL,
+	[cerror] [char](10) NULL,
+	[fingreso] [datetime] NULL,
+	[cusuario] [numeric](11, 0) NULL,
+	[ccategoria] [smallint] NULL,
+	[cusuarioauto] [numeric](11, 0) NULL,
+	[ccategoriaauto] [smallint] NULL,
+	[fultmod] [datetime] NULL,
+	[cusuariomod] [numeric](11, 0) NULL,
+	[ccategoriamod] [smallint] NULL,
+ CONSTRAINT [adpoliza_pk] PRIMARY KEY CLUSTERED 
+(
+	[cpoliza] ASC,
+	[fanopol] ASC,
+	[fmespol] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
